@@ -7,7 +7,9 @@ deps:
         clang \
         llvm \
         lld \
+        curl \
         qemu-system-riscv32
+    RUN curl -LO https://github.com/qemu/qemu/raw/v8.0.4/pc-bios/opensbi-riscv32-generic-fw_dynamic.bin
 
 build:
     FROM +deps
