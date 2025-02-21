@@ -10,7 +10,7 @@ deps:
 build:
     FROM +deps
     COPY . .
-    RUN make
+    RUN make earth-run
     SAVE ARTIFACT build/program AS LOCAL build/program
 
 lint:

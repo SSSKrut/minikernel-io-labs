@@ -64,7 +64,9 @@ earth:
 	earthly +build
 
 earth-run:
-	earthly +run
+	ls -lah
+	whereis clang
+	sh run.sh
 
 dry-run:
 	./build/**

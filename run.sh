@@ -2,7 +2,7 @@ set -xue
 
 QEMU=qemu-system-riscv32
 
-CC=/opt/homebrew/opt/llvm/bin/clang
+CC=/usr/bin/clang
 CFLAGS="-std=c11 -O2 -g3 -Wall -Wextra --target=riscv32 -ffreestanding -nostdlib"
 
 $CC $CFLAGS -Wl, -Tkernel.kd -Wl, -Map=kernel.map -o kernel.elf kernel.c
