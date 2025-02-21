@@ -7,7 +7,8 @@ deps:
         clang \
         clang-format \
         clang-tidy \
-        make
+        make \
+        qemu
 
 build:
     FROM +deps
