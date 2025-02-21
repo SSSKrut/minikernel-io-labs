@@ -5,6 +5,8 @@ deps:
     WORKDIR /workspace
     RUN apt-get update && apt-get install -y \
         clang \
+        llvm \
+        lld \
         qemu-system-riscv32
 
 build:
